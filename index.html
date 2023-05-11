@@ -1,0 +1,65 @@
+<!--F21DV Course Work 1 HTML file for Daniyal Syed - H00155307-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>F21DV Course Work 1 for Daniyal Syed</title>
+    <!-- Main CSS stylesheet-->
+    <link rel="stylesheet" href="main.css">
+    <!-- D3.js and d3-zoom libraries-->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/d3-zoom.v3.min.js"></script>
+</head>
+
+<body>
+    <!-- Page Title-->
+    <header>
+        <h1>F21DV COVID-19 Dashboard</h1>
+        <h2>March 2020 to November 2022</h2>
+    </header>
+    <!--Main Page div-->
+    <div class="main">
+        <!--Map JS-->
+        <div id="map">
+            <script src="map.js"></script>
+            <!-- Map Date Slider-->
+            <div class="slider-container">
+                <input type="range" min="0" max="1" value="0" class="slider">
+            </div>
+            <span id="date"></span>
+            <header>
+                <h3>Global Spread of COVID-19</h3>
+            </header>
+        </div>
+        <!--Country Comparison Line JS-->
+        <div id="line">
+            <script src="line.js"></script>
+        </div>
+        <!--COVID Data Barchart JS-->
+        <h3 style="margin-top: 130px;">COVID-19 New Cases Timeline Across Major Countries (New Cases)</h3>
+        <div id="bar">
+            <div id="dropdown"></div>
+            <script src="bar.js"></script>
+        </div>
+        <h3 style="margin-left: 900px;">Worldwide Total Booster Shots</h3>
+        <div id="boosters">
+            <script src="boosters.js"></script>
+        </div>
+        <!--Developed vs Developing Countries Comparison JS-->
+        <div id="gdp">
+            <div class="header-container">
+                <h3>COVID-19 Spread Developed vs Developing Countries (Cases per million)</h3>
+                <h3>Global Spread of COVID-19 (Cases per million)</h3>
+            </div>
+            <script src="gdp.js"></script>
+        </div>
+        <!--Tree Map for Total cases by continent-->
+        <div id="cluster">
+            <h2>Treemap for COVID-19 total cases across continents till November 2022</h2>
+            <script src="cluster.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>
